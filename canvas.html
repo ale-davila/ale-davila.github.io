@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Canvas </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="canvasstyles.css" media="screen">
+</head>
+
+<body>
+  <div id="mainDiv">
+    <header>
+      <h3>A Sample Canvas</h3>
+    </header>
+    
+    <section>
+      <h4>Here is the first canvas:</h4>
+      <canvas id="myCanvas" width="300" height="320" style="border:10x solid #000000;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+      <h4>My second canvas:</h4>
+      <canvas id="myCanvas2" width="300" height="320" style="border:5px solid #000000;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(-50, 0, 400, 400);
+ctx.fillStyle = "#DEDEDE";
+ctx.fill()
+ctx.beginPath();
+ctx.rect(10, 20, 150, 100);
+ctx.fillStyle = "red";
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(40, 60, 300, 100);
+ctx.fillStyle = "blue";
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(-10, 100, 150, 300);
+ctx.fillStyle = "yellow";
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(80, 150, 150, 300);
+ctx.fillStyle = "green";
+ctx.fill();
+ctx.beginPath();
+ctx.rect(40, 200, 300, 100);
+ctx.fillStyle = "black";
+ctx.fill();
+ var c2 = document.getElementById('myCanvas2');
+    var ctx2 = c2.getContext("2d");
+         var canvas = document.getElementById('myCanvas2');
+         var ctx2 = canvas.getContext('2d');
+		 ctx.beginPath();
+ctx2.rect(-50, 0, 400, 400);
+ctx2.fillStyle = "#FFFACD";
+ctx2.fill()
+         ctx2.fillStyle = "#000000";
+         ctx2.beginPath();
+         ctx2.moveTo(108, 0.0);
+         ctx2.lineTo(141, 70);
+         ctx2.lineTo(218, 78.3);
+         ctx2.lineTo(162, 131);
+         ctx2.lineTo(175, 205);
+         ctx2.lineTo(108, 170);
+         ctx2.lineTo(41.2, 205);
+         ctx2.lineTo(55, 131);
+         ctx2.lineTo(1, 78);
+         ctx2.lineTo(75, 68);
+         ctx2.lineTo(108, 0);
+         ctx2.closePath();
+         ctx2.fill();
+      </script>
+ </section>
+      
+
+
+
+</body>
+</html>
